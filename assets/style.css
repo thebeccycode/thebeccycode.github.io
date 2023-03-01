@@ -1,13 +1,11 @@
 body {
-    background-color: midnightblue;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: midnightblue!;
 }
 
 footer {
@@ -15,3 +13,24 @@ footer {
     flex-direction: column;
     align-items: end;
 }
+
+#bio-container, #project-container, #contact-container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+h4{
+    font-size: 32px;
+}
+
+#bio-container ul{
+    margin: 20px;
+}
+
+h4, p{
+    margin: 20px;
+}
+
