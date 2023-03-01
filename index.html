@@ -11,6 +11,8 @@
     <title>Rebecca Sellers Portfolio</title>
 </head>
 
+<!--ATTENTION ME: media queries need doing as the webpage does not adjust to all viewports.-->
+
 <body>
     <header id="header">
         <div class="jumbotron">
@@ -23,7 +25,7 @@
 
     <main id="bio-container">
         <!--description-->
-        <img src="./images/image 3.jpg" alt="selfie" width="30%">
+        <img src="./images/image 3.jpg" alt="selfie" height="500px">
         <div id="bio">
             <h4>About Me</h4>
             <p>These links are not yet active but...</p>
@@ -36,23 +38,27 @@
 
                 <br>
 
-                <li> 
-                    Currently developing pre-existing JavaScript and React knowledge. You want to see examples of this? 
+                <li>
+                    Currently developing pre-existing JavaScript and React knowledge. You want to see examples of this?
                     <a href="">Click here.</a>
                 </li>
-                
+
                 <br>
                 <li>
-                    I understand the importance of SEO (search engine optimization) and making websites accessible for everyone. That's why I always use semantic coding language, and also comment on my code so that other developers find my code easy to navigate. Would you like to see examples of this?
+                    I understand the importance of SEO (search engine optimization) and making websites accessible for
+                    everyone. That's why I always use semantic coding language, and also comment on my code so that
+                    other developers find my code easy to navigate. Would you like to see examples of this?
                     <a href="">Click here.</a>
 
                     <br><br>
 
-                    <li>
-                        I know that my selfie to the left isn't really professional, but I would like to guarantee that I am. I know you've heard it before; the whole <em>I'm so efficient and hardworking!!</em> schpiel <strong>BUT</strong> I would like to show you that I am. If you'd like to
-                        <a href="">click here</a>
-                        too.
-                    </li>
+                <li>
+                    I know that my selfie to the left isn't really professional, but I would like to guarantee that I
+                    am. I know you've heard it before; the whole <em>I'm so efficient and hardworking!!</em> schpiel
+                    <strong>BUT</strong> I would like to show you that I am. If you'd like to
+                    <a href="">click here</a>
+                    too.
+                </li>
 
                 </li>
 
@@ -66,9 +72,37 @@
 
     <article id="project-container">
         <h4>Projects</h4>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non laborum et praesentium animi ipsum, mollitia
-        blanditiis recusandae eius vitae aliquid, eligendi consectetur eos quae aliquam, quam dicta iusto tempora
-        placeat!
+        <!--JavaScript Card-->
+        <div class="card" style="width: 18rem; height: 16rem;">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="">JavaScript</a>
+                </h4>
+                <p class="card-text">If you follow this link, you can view the projects I have been working on that
+                    include JavaScript and some Node.js & jQuery.</p>
+
+            </div>
+        </div>
+        <!--React Card-->
+        <div class="card" style="width: 18rem; height: 16rem; ">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="">React</a>
+                </h4>
+                <p class="card-text">If you follow this link, you can view the projects I have been working on that
+                    include React.js.</p>
+
+            </div>
+        </div>
+        <!--Coming soon card-->
+        <div class="card" style="width: 18rem; height: 16rem;">
+            <div class="card-body">
+                <h4 class="card-title"><a href="">Coming soon</a></h4>
+                <p class="card-text"> 👩‍💻
+                </p>
+
+            </div>
+        </div>
     </article>
 
     <br>
@@ -77,9 +111,39 @@
 
     <div id="contact-container">
         <h4>Want to get in touch?</h4>
-        Lorem ipsum dolor sit.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi nesciunt quasi a! Quos fugit consequatur
-        cumque minus vero distinctio odio, qui exercitationem voluptatum ea, tenetur, voluptatibus esse rerum optio!
+
+        <form>
+            <div class="form-group">
+
+                <label for="exampleInputEmail1">What is your name?</label>
+                <input type="text" class="form-control">
+                <p></p>
+
+                <label>How do you wish to be contacted?</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">☎️ phone</label>
+                </div>
+
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">📧 email</label>
+                </div>
+            </div>
+
+            <label for="exampleFormControlTextarea1">Preferred contact details:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+            <br>
+            <label for="exampleFormControlTextarea1">What is your message regarding?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <small id="emailHelp" class="form-text text-muted">Remember to leave your contact details so I can get back
+                to you.</small>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </form>
     </div>
 
     <br>

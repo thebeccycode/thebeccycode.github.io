@@ -14,16 +14,26 @@ footer {
     align-items: end;
 }
 
-#bio-container, #project-container, #contact-container{
+#bio-container{
     display: flex;
     flex-direction: row;
     width: 80%;
-    margin-left: 10%;
-    
+    margin-left: 10%; 
 }
 
-h4{
-    font-size: 32px;
+#project-container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%; 
+    justify-content: space-between;
+}
+
+#contact-container{
+   display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;  
 }
 
 #bio-container ul{
@@ -33,4 +43,3 @@ h4{
 h4, p{
     margin: 20px;
 }
-
